@@ -1,5 +1,5 @@
 # general aliases
-alias update="sudo apt-get update && sudo apt-get upgrade && flatpak update"
+alias update="sudo pacman -Syu"
 alias nsd="killall speech-dispatcher"
 alias cl="clear"
 alias py="python3"
