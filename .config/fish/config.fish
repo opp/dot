@@ -1,6 +1,5 @@
 # general aliases
 alias update="sudo pacman -Syu"
-alias nsd="killall speech-dispatcher"
 alias cl="clear"
 alias py="python3"
 alias cat="bat" # https://github.com/sharkdp/bat
