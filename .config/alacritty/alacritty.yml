@@ -1,20 +1,19 @@
-# Window Customization
 window:
   dimensions:
-    columns: 120
+    columns: 120 
     lines: 35
   padding:
     x: 10
     y: 10
-  decorations: full
+    decorations: full
+  opacity: 1
+  dynamic_title: false
+
 scrolling:
   history: 20000
   multiplier: 3
-window.opacity: 1
-window.dynamic_title: false
 
 draw_bold_text_with_bright_colors: false
 
-# Key bindings
-key_bindings:
-  - { key: N, mods: Control, action: SpawnNewInstance }
+font:
+  size: 11
