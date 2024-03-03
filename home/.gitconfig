@@ -9,3 +9,5 @@ co = checkout
 cob = checkout -b
 delb = branch -D
 lol = log --oneline
+[core]
+	fileMode = false

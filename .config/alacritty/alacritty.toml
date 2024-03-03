@@ -1,0 +1,22 @@
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[font]
+normal = { family = "Source Code Pro", style = "regular" }
+size = 11
+
+[scrolling]
+history = 20000
+multiplier = 3
+
+[window]
+dynamic_title = false
+opacity = 1
+
+[window.dimensions]
+columns = 120
+lines = 35
+
+[window.padding]
+x = 10
+y = 10
