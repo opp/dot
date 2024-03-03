@@ -5,6 +5,11 @@ draw_bold_text_with_bright_colors = false
 normal = { family = "Source Code Pro", style = "regular" }
 size = 11
 
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control"
+
 [scrolling]
 history = 20000
 multiplier = 3
