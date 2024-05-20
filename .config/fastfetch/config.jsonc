@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "type": "small"
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "uptime",
+    "memory",
+    "break",
+    "colors"
+  ]
+}
