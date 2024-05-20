@@ -8,8 +8,9 @@
     "os",
     "kernel",
     "uptime",
+    "shell",
+    "terminal",
     "memory",
-    "break",
-    "colors"
+    "break"
   ]
 }
