@@ -12,7 +12,7 @@ history = 20000
 multiplier = 3
 
 [window]
-dynamic_title = true
+dynamic_title = false
 opacity = 1
 padding.x = 10
 padding.y = 10
@@ -20,34 +20,7 @@ dimensions.columns = 120
 dimensions.lines = 35
 
 [cursor]
-style = { shape = "Beam", blinking = "Off" }
+style = { shape = "Block", blinking = "Off" }
 
 [colors]
 draw_bold_text_with_bright_colors = false
-
-[colors.primary]
-background = '#181818'
-foreground = '#ffffff'
-
-[colors.cursor]
-text   = '#fafafa'
-cursor = '#008b94'
-
-[colors.normal]
-black   = '#333f4a'
-red     = '#d95468'
-green   = '#8bd49c'
-blue    = '#539afc'
-magenta = '#b62d65'
-cyan    = '#70e1e8'
-white   = '#b7c5d3'
-
-[colors.bright]
-black   = '#41505e'
-red     = '#d95468'
-green   = '#8bd49c'
-yellow  = '#ebbf83'
-blue    = '#5ec4ff'
-magenta = '#e27e8d'
-cyan    = '#70e1e8'
-white   = '#ffffff'
