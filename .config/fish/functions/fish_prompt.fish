@@ -1,23 +1,30 @@
-# name: sashimi
+# name: sashimi (modified)
 function fish_prompt
+  set -l username $USER
+  set -l host $hostname
   set -l last_status $status
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
-  set -g red (set_color -o red)
-  set -g blue (set_color -o blue)
+  set -l red (set_color -o red)
+  set -l blue (set_color -o blue)
   set -l green (set_color -o green)
-  set -g normal (set_color normal)
+  set -l white (set_color -o white)
+  set -l normal (set_color normal)
 
   set -l ahead (_git_ahead)
-  set -g whitespace ' '
+  set -l whitespace ' '
+  set -l left_sb '['
+  set -l right_sb ']'
+  set -l at '@'
 
   if test $last_status = 0
-    set initial_indicator "$green◆"
-    set status_indicator "$normal❯$cyan❯$green❯"
+#     set initial_indicator "$green◆"
+    set status_indicator "$normal➜"
   else
-    set initial_indicator "$red✖ $last_status"
-    set status_indicator "$red❯$red❯$red❯"
+#     set initial_indicator "$red✖ $last_status"
+    set status_indicator "$red➜"
   end
+  set -l user_host "$cyan$left_sb$white$username$red$at$white$host$cyan$right_sb"
   set -l cwd $cyan(basename (prompt_pwd))
 
   if [ (_git_branch_name) ]
@@ -36,7 +43,7 @@ function fish_prompt
     end
   end
 
-  echo -n -s $initial_indicator $whitespace $cwd $git_info $whitespace $ahead $status_indicator $whitespace
+  echo -n -s $user_host $whitespace $cwd $git_info $whitespace $ahead $status_indicator $whitespace
 end
 
 function _git_ahead

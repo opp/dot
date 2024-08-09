@@ -35,8 +35,8 @@ PROMPT="%B%{$fg[blue]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[blue]
 PROMPT+="\$vcs_info_msg_0_ "
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=20000
+SAVEHIST=20000
 HISTFILE=~/.cache/zsh/history
 
 # Basic auto/tab complete:
@@ -50,11 +50,7 @@ _comp_options+=(globdots) # Include hidden files.
 # echo -ne '\e[5 q'
 
 # aliases
-alias update="sudo apt-get update && sudo apt-get upgrade && flatpak update"
-alias nsd="killall speech-dispatcher"
-alias cl="clear"
 alias py="python3"
-alias q="exit"
 alias cat="bat" # https://github.com/sharkdp/bat
 alias ls="lsd" # https://github.com/Peltoche/lsd
 alias l="lsd -lh"
@@ -65,7 +61,6 @@ alias cp='cp -v'
 alias mv='mv -v'
 alias et='exiftool' # https://www.exiftool.org/install.html
 alias ..='cd ..'
-alias ytdl="python3 /usr/local/bin/youtube-dl"
 
 # git aliases
 alias g='git'
@@ -75,5 +70,4 @@ alias gc='git commit -mv'
 
 # Load plugins -- should be last.
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # https://github.com/zsh-users/zsh-syntax-highlighting
-source ~/.zsh/sudo/sudo.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # https://github.com/zsh-users/zsh-autosuggestions
