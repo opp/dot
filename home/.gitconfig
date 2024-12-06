@@ -1,13 +1,6 @@
 [init]
 defaultBranch = main
 
-[alias]
-s = status
-a = add
-cm = commit -m
-co = checkout
-cob = checkout -b
-delb = branch -D
-lol = log --oneline
 [core]
-	fileMode = false
+fileMode = false
+editor = zeditor --wait
